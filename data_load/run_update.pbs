@@ -1,0 +1,14 @@
+#PBS -N jobupdatep2t2
+#PBS -m bae
+#PBS -l nodes=1:ppn=1
+#PBS -l mem=20GB
+#PBS -l walltime=1:00:00:00
+#PBS -j oe
+#PBS -q shared
+#PBS -t 1-40
+
+cd $PBS_O_WORKDIR
+module load R
+mkdir $PBS_ARRAYID.tmp
+cd $PBS_ARRAYID.tmp
+R CMD BATCH --no-save --no-restore "--args update_cols='pdb' job_index=$PBS_ARRAYID arr_len=40" ../update_p2t2.R log.rout

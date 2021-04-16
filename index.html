@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="frontend/js/jquery-3.4.1.min.js"></script>
+    <script src="frontend/js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="frontend/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.6.0/intro.min.js"></script>
+    <script type="text/javascript" language="javascript" src="frontend/js/settings.js"></script>
+    <script type="text/javascript" language="javascript" src="frontend/lib_misc.js"></script>
+    <script type="module" src="frontend/js/index.js"></script>
+    <script src="frontend/bundle.js"></script>
+    <script src="https://kit.fontawesome.com/8066aa2510.js" crossorigin="anonymous"></script>
+
+    <!-- FROM: http://getbootstrap.com/ -->
+    <link href="frontend/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.6.0/introjs.min.css" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' href='frontend/css/index.css'>
+    <link rel='stylesheet' type='text/css' href='frontend/css/circle-animations.css'>
+
+    <title>P2T2: Protein Panoramic annoTation Tool Facilitates the Annotation and Interpretation of Protein Coding Variants</title>
+</head>
+
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#" title="Protein Panoramic Annotation Tool"
+          data-intro="Welcome to Protein Panoramic Annotation Tool">                       
+          <b>P<sup>2</sup>T<sup>2</sup></b>
+        </a>
+    </div>
+
+    <div class="navbar-header">
+        <form class="navbar-form navbar-left" id="form_gene">
+            <div class="dropdown">
+                <input type="text" id="txt_gene_search" class="form-control"
+                       placeholder="Gene, transcript, or protein ID"
+                       size="30"
+                       aria-haspopup="true" aria-expanded="false"
+                       data-intro="Type a gene, transcript, or protein identifier here and select from the search results. Annotations for your selected transcript will be displayed, many of which are links (Gene queries are mapped to the canonical transcript).<br>Click-and-drag to zoom in.<br>Double-click to zoom out.">
+                <div id='search-tooltip' class='helptip'>
+                    Valid identifiers are Gene Symbols, Uniprot Accessions, Ensembl ENST or ENSPs, and Entrez c. or p. variants. To align a protein or nucleotide sequence, select the appropriate option from the dropdown.
+                </div>
+                <ul class="dropdown-menu" id="tbl_results" aria-labelledby="txt_gene_search"></ul>
+                <select id='id-type' class="form-control">
+                    <option value='id'>ID or variant</option>
+                    <option value='protein'>Protein Sequence</option>
+                    <option value='nucleotide'>Nucleotide Sequence</option>
+                </select>
+                <input type="submit" id="btn_gene_search" class="btn btn-default" value="Submit">
+
+                <div class="form-group">
+                    <div class="spinner">
+                    </div>
+                </div>
+
+                MSA:
+                <select class="form-control" id="msa_seq_type">
+                    <option value="ISOFORM_MSA" selected>Isoforms</option>
+                    <option value="PARALOG_MSA">Paralogs</option>
+                    <!-- <option value="Orthologs">Orthologs</option> -->
+                </select>
+                <select class="form-control" id="msa_ann_type">
+                    <option value="Sites">Sites</option>
+                    <!-- <option value="Regions">Regions</option> -->
+                </select>
+
+                <div class="form-group">
+                    <p id='checkBrowserTypeResult'></p>
+                </div>
+
+            </div>
+        </form>
+        <form class="navbar-form navbar-right" id="form_mark" onsubmit="return false;">
+            <div class="form-group">
+                <div class='header-section'>
+                    <input type="text" id="txt_aa_mark" class="form-control hasHelptip"
+                        helptip="aaMark"
+                        placeholder="AA position"
+                        size="10"
+                        data-intro="You can mark a position of interest by typing it here and then clicking [Mark], or shift-clicking any open position in the plot.<br>Clicking on points and lines will bring you to the information source.">
+                    <input type="submit" id="btn_aa_mark" class="btn btn-default" value="Mark">
+                    <div class='header-helptip helptip' id='aaMarkHelp'>Focus on a position or variant to retrieve all associated annotations. Variants can be searched with REFPOSALT syntax, e.g. Q61R</div>
+                </div>
+                &nbsp;
+                <a href="#" class="btn btn-default" onclick="window.location.href='help.html'" data-intro="Check our help page!">
+                    <span class="glyphicon glyphicon-info-sign" style="color: #5bc0de"></span>
+                    Help
+                </a>
+                
+                <a href="#" class="btn btn-default" onclick="introJs().setOption('showStepNumbers','false').start();">
+                    Intro
+                </a>
+            </div>
+        </form>
+    </div> <!-- class="navbar-header" -->
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-10">
+            <h4 id="status"></h4>
+            <div id="graph-container">
+                <svg id="graph"></svg>
+            </div>
+            <div class="alert alert-warning" id="warnings" role="alert" style="display:none"></div>
+            <div class="alert alert-info" id="notes" role="alert" style="display:none"></div>
+        </div> <!-- left column -->
+        <div class="col-sm-2" id="details">
+        </div> <!-- right column -->
+
+    </div> <!-- row -->
+    <div id='viewer-spacer'></div>
+</div> <!-- content container -->
+<div class='custom-dialog'>
+    <div class='dialog-box'>
+        <div class='dialog-message-container'>
+            <div class='dialog-message'></div>
+        </div>
+        <div class='dialog-button-container'>
+            <div class='dialog-close'>Close</div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

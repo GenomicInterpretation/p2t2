@@ -1,0 +1,10 @@
+Flask==1.0.2
+Flask-Cors==3.0.7
+Flask-Ext==0.1
+Flask-JWT-Extended==3.19.0
+prody==1.10.11
+PyJWT==1.7.1
+pymongo==3.11.2
+PyYAML==5.1.2
+requests==2.21.0
+auto_py_to_exe==2.7.11

@@ -1,0 +1,42 @@
+version: '2'
+services:
+    backend:
+        build: ./backend
+        expose:
+            - 5000
+        volumes:
+            - .:/usr/src/p2t2
+        ports: 
+            - 5000:5000
+        environment:
+            - FLASK_ENV=development
+            - FLASK_APP=backend
+            - FLASK_DEBUG=1
+        links:
+            - mongo
+    frontend:
+        build: ./frontend
+        expose: 
+            - 8080
+        ports:
+            - 8080:8080
+        volumes:
+            - .:/usr/src/p2t2
+        links:
+            - backend:backend
+        command: /usr/src/p2t2/frontend/frontend_entrypoint.sh
+    mongo:
+        image: mongo
+        restart: always
+        environment:
+            - MONGO_HOST=host.docker.internal
+        ports:
+            - 27017:27017
+    mongo-seed:
+        build: ./mongo-seed
+        links:
+            - mongo
+        depends_on: [mongo]
+        volumes:
+            - ./mongo-seed/p2t2:/data/db
+        restart: on-failure

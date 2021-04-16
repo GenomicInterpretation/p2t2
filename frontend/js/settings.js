@@ -1,0 +1,1 @@
+var API_URL = "";//"http://p2t2.northcentralus.cloudapp.azure.com";

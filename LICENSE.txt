@@ -1,0 +1,18 @@
+LICENSE
+Copyright (c) 2016 Mayo Foundation for Medical Education and Research.
+ 
+Permission is hereby granted, free of charge for non-commercial use, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software, including the rights to use, copy, modify, merge, publish, or distribute, copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+ 
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+ 
+Any use by a for-profit entity must obtain a commercial license from Mayo Clinic Ventures (see below).
+ 
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ 
+For other licensing arrangements including any commercial use, please contact:
+ 
+1) Michael T. Zimmermann, Ph.D., Assistant Professor of Bioinformatics, Medical College of Wisconsin, Milwaukee, WI 53226
+
+2) Eric W. Klee, Ph.D., Assistant Professor of Medical Informatics, Associate Director of Bioinformatics, Co-Director, Clinical Genome Sequencing Laboratory, Mayo Clinic, Rochester, MN 55905
+ 
+3) Mayo Clinic Ventures, Attention: Peter A. Ball, Minnesota BioBusiness Center - 4, 221 1st Ave. SW, Rochester, MN 55904 ball.peter@mayo.edu

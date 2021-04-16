@@ -1,0 +1,717 @@
+
+/*
+Keyframes were generated with the following script (javascript)
+let outString;
+
+outString = "";
+for (let i = 1; i <= 100; i++){
+    outString += `
+@keyframes cliprotate${i} {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(${-180 + Math.round(180 * (i)/100)}deg);}
+}
+.similarity-circle.animate${i}::after {
+    animation: cliprotate${i} 2s forwards;
+}
+`;}
+*/
+@keyframes cliprotate1 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-178deg);}
+}
+.similarity-circle.animate1::after {
+    animation: cliprotate1 2s forwards;
+}
+@keyframes cliprotate2 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-176deg);}
+}
+.similarity-circle.animate2::after {
+    animation: cliprotate2 2s forwards;
+}
+@keyframes cliprotate3 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-175deg);}
+}
+.similarity-circle.animate3::after {
+    animation: cliprotate3 2s forwards;
+}
+@keyframes cliprotate4 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-173deg);}
+}
+.similarity-circle.animate4::after {
+    animation: cliprotate4 2s forwards;
+}
+@keyframes cliprotate5 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-171deg);}
+}
+.similarity-circle.animate5::after {
+    animation: cliprotate5 2s forwards;
+}
+@keyframes cliprotate6 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-169deg);}
+}
+.similarity-circle.animate6::after {
+    animation: cliprotate6 2s forwards;
+}
+@keyframes cliprotate7 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-167deg);}
+}
+.similarity-circle.animate7::after {
+    animation: cliprotate7 2s forwards;
+}
+@keyframes cliprotate8 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-166deg);}
+}
+.similarity-circle.animate8::after {
+    animation: cliprotate8 2s forwards;
+}
+@keyframes cliprotate9 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-164deg);}
+}
+.similarity-circle.animate9::after {
+    animation: cliprotate9 2s forwards;
+}
+@keyframes cliprotate10 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-162deg);}
+}
+.similarity-circle.animate10::after {
+    animation: cliprotate10 2s forwards;
+}
+@keyframes cliprotate11 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-160deg);}
+}
+.similarity-circle.animate11::after {
+    animation: cliprotate11 2s forwards;
+}
+@keyframes cliprotate12 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-158deg);}
+}
+.similarity-circle.animate12::after {
+    animation: cliprotate12 2s forwards;
+}
+@keyframes cliprotate13 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-157deg);}
+}
+.similarity-circle.animate13::after {
+    animation: cliprotate13 2s forwards;
+}
+@keyframes cliprotate14 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-155deg);}
+}
+.similarity-circle.animate14::after {
+    animation: cliprotate14 2s forwards;
+}
+@keyframes cliprotate15 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-153deg);}
+}
+.similarity-circle.animate15::after {
+    animation: cliprotate15 2s forwards;
+}
+@keyframes cliprotate16 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-151deg);}
+}
+.similarity-circle.animate16::after {
+    animation: cliprotate16 2s forwards;
+}
+@keyframes cliprotate17 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-149deg);}
+}
+.similarity-circle.animate17::after {
+    animation: cliprotate17 2s forwards;
+}
+@keyframes cliprotate18 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-148deg);}
+}
+.similarity-circle.animate18::after {
+    animation: cliprotate18 2s forwards;
+}
+@keyframes cliprotate19 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-146deg);}
+}
+.similarity-circle.animate19::after {
+    animation: cliprotate19 2s forwards;
+}
+@keyframes cliprotate20 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-144deg);}
+}
+.similarity-circle.animate20::after {
+    animation: cliprotate20 2s forwards;
+}
+@keyframes cliprotate21 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-142deg);}
+}
+.similarity-circle.animate21::after {
+    animation: cliprotate21 2s forwards;
+}
+@keyframes cliprotate22 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-140deg);}
+}
+.similarity-circle.animate22::after {
+    animation: cliprotate22 2s forwards;
+}
+@keyframes cliprotate23 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-139deg);}
+}
+.similarity-circle.animate23::after {
+    animation: cliprotate23 2s forwards;
+}
+@keyframes cliprotate24 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-137deg);}
+}
+.similarity-circle.animate24::after {
+    animation: cliprotate24 2s forwards;
+}
+@keyframes cliprotate25 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-135deg);}
+}
+.similarity-circle.animate25::after {
+    animation: cliprotate25 2s forwards;
+}
+@keyframes cliprotate26 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-133deg);}
+}
+.similarity-circle.animate26::after {
+    animation: cliprotate26 2s forwards;
+}
+@keyframes cliprotate27 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-131deg);}
+}
+.similarity-circle.animate27::after {
+    animation: cliprotate27 2s forwards;
+}
+@keyframes cliprotate28 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-130deg);}
+}
+.similarity-circle.animate28::after {
+    animation: cliprotate28 2s forwards;
+}
+@keyframes cliprotate29 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-128deg);}
+}
+.similarity-circle.animate29::after {
+    animation: cliprotate29 2s forwards;
+}
+@keyframes cliprotate30 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-126deg);}
+}
+.similarity-circle.animate30::after {
+    animation: cliprotate30 2s forwards;
+}
+@keyframes cliprotate31 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-124deg);}
+}
+.similarity-circle.animate31::after {
+    animation: cliprotate31 2s forwards;
+}
+@keyframes cliprotate32 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-122deg);}
+}
+.similarity-circle.animate32::after {
+    animation: cliprotate32 2s forwards;
+}
+@keyframes cliprotate33 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-121deg);}
+}
+.similarity-circle.animate33::after {
+    animation: cliprotate33 2s forwards;
+}
+@keyframes cliprotate34 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-119deg);}
+}
+.similarity-circle.animate34::after {
+    animation: cliprotate34 2s forwards;
+}
+@keyframes cliprotate35 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-117deg);}
+}
+.similarity-circle.animate35::after {
+    animation: cliprotate35 2s forwards;
+}
+@keyframes cliprotate36 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-115deg);}
+}
+.similarity-circle.animate36::after {
+    animation: cliprotate36 2s forwards;
+}
+@keyframes cliprotate37 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-113deg);}
+}
+.similarity-circle.animate37::after {
+    animation: cliprotate37 2s forwards;
+}
+@keyframes cliprotate38 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-112deg);}
+}
+.similarity-circle.animate38::after {
+    animation: cliprotate38 2s forwards;
+}
+@keyframes cliprotate39 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-110deg);}
+}
+.similarity-circle.animate39::after {
+    animation: cliprotate39 2s forwards;
+}
+@keyframes cliprotate40 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-108deg);}
+}
+.similarity-circle.animate40::after {
+    animation: cliprotate40 2s forwards;
+}
+@keyframes cliprotate41 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-106deg);}
+}
+.similarity-circle.animate41::after {
+    animation: cliprotate41 2s forwards;
+}
+@keyframes cliprotate42 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-104deg);}
+}
+.similarity-circle.animate42::after {
+    animation: cliprotate42 2s forwards;
+}
+@keyframes cliprotate43 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-103deg);}
+}
+.similarity-circle.animate43::after {
+    animation: cliprotate43 2s forwards;
+}
+@keyframes cliprotate44 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-101deg);}
+}
+.similarity-circle.animate44::after {
+    animation: cliprotate44 2s forwards;
+}
+@keyframes cliprotate45 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-99deg);}
+}
+.similarity-circle.animate45::after {
+    animation: cliprotate45 2s forwards;
+}
+@keyframes cliprotate46 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-97deg);}
+}
+.similarity-circle.animate46::after {
+    animation: cliprotate46 2s forwards;
+}
+@keyframes cliprotate47 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-95deg);}
+}
+.similarity-circle.animate47::after {
+    animation: cliprotate47 2s forwards;
+}
+@keyframes cliprotate48 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-94deg);}
+}
+.similarity-circle.animate48::after {
+    animation: cliprotate48 2s forwards;
+}
+@keyframes cliprotate49 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-92deg);}
+}
+.similarity-circle.animate49::after {
+    animation: cliprotate49 2s forwards;
+}
+@keyframes cliprotate50 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-90deg);}
+}
+.similarity-circle.animate50::after {
+    animation: cliprotate50 2s forwards;
+}
+@keyframes cliprotate51 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-88deg);}
+}
+.similarity-circle.animate51::after {
+    animation: cliprotate51 2s forwards;
+}
+@keyframes cliprotate52 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-86deg);}
+}
+.similarity-circle.animate52::after {
+    animation: cliprotate52 2s forwards;
+}
+@keyframes cliprotate53 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-85deg);}
+}
+.similarity-circle.animate53::after {
+    animation: cliprotate53 2s forwards;
+}
+@keyframes cliprotate54 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-83deg);}
+}
+.similarity-circle.animate54::after {
+    animation: cliprotate54 2s forwards;
+}
+@keyframes cliprotate55 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-81deg);}
+}
+.similarity-circle.animate55::after {
+    animation: cliprotate55 2s forwards;
+}
+@keyframes cliprotate56 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-79deg);}
+}
+.similarity-circle.animate56::after {
+    animation: cliprotate56 2s forwards;
+}
+@keyframes cliprotate57 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-77deg);}
+}
+.similarity-circle.animate57::after {
+    animation: cliprotate57 2s forwards;
+}
+@keyframes cliprotate58 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-76deg);}
+}
+.similarity-circle.animate58::after {
+    animation: cliprotate58 2s forwards;
+}
+@keyframes cliprotate59 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-74deg);}
+}
+.similarity-circle.animate59::after {
+    animation: cliprotate59 2s forwards;
+}
+@keyframes cliprotate60 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-72deg);}
+}
+.similarity-circle.animate60::after {
+    animation: cliprotate60 2s forwards;
+}
+@keyframes cliprotate61 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-70deg);}
+}
+.similarity-circle.animate61::after {
+    animation: cliprotate61 2s forwards;
+}
+@keyframes cliprotate62 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-68deg);}
+}
+.similarity-circle.animate62::after {
+    animation: cliprotate62 2s forwards;
+}
+@keyframes cliprotate63 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-67deg);}
+}
+.similarity-circle.animate63::after {
+    animation: cliprotate63 2s forwards;
+}
+@keyframes cliprotate64 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-65deg);}
+}
+.similarity-circle.animate64::after {
+    animation: cliprotate64 2s forwards;
+}
+@keyframes cliprotate65 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-63deg);}
+}
+.similarity-circle.animate65::after {
+    animation: cliprotate65 2s forwards;
+}
+@keyframes cliprotate66 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-61deg);}
+}
+.similarity-circle.animate66::after {
+    animation: cliprotate66 2s forwards;
+}
+@keyframes cliprotate67 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-59deg);}
+}
+.similarity-circle.animate67::after {
+    animation: cliprotate67 2s forwards;
+}
+@keyframes cliprotate68 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-58deg);}
+}
+.similarity-circle.animate68::after {
+    animation: cliprotate68 2s forwards;
+}
+@keyframes cliprotate69 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-56deg);}
+}
+.similarity-circle.animate69::after {
+    animation: cliprotate69 2s forwards;
+}
+@keyframes cliprotate70 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-54deg);}
+}
+.similarity-circle.animate70::after {
+    animation: cliprotate70 2s forwards;
+}
+@keyframes cliprotate71 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-52deg);}
+}
+.similarity-circle.animate71::after {
+    animation: cliprotate71 2s forwards;
+}
+@keyframes cliprotate72 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-50deg);}
+}
+.similarity-circle.animate72::after {
+    animation: cliprotate72 2s forwards;
+}
+@keyframes cliprotate73 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-49deg);}
+}
+.similarity-circle.animate73::after {
+    animation: cliprotate73 2s forwards;
+}
+@keyframes cliprotate74 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-47deg);}
+}
+.similarity-circle.animate74::after {
+    animation: cliprotate74 2s forwards;
+}
+@keyframes cliprotate75 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-45deg);}
+}
+.similarity-circle.animate75::after {
+    animation: cliprotate75 2s forwards;
+}
+@keyframes cliprotate76 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-43deg);}
+}
+.similarity-circle.animate76::after {
+    animation: cliprotate76 2s forwards;
+}
+@keyframes cliprotate77 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-41deg);}
+}
+.similarity-circle.animate77::after {
+    animation: cliprotate77 2s forwards;
+}
+@keyframes cliprotate78 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-40deg);}
+}
+.similarity-circle.animate78::after {
+    animation: cliprotate78 2s forwards;
+}
+@keyframes cliprotate79 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-38deg);}
+}
+.similarity-circle.animate79::after {
+    animation: cliprotate79 2s forwards;
+}
+@keyframes cliprotate80 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-36deg);}
+}
+.similarity-circle.animate80::after {
+    animation: cliprotate80 2s forwards;
+}
+@keyframes cliprotate81 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-34deg);}
+}
+.similarity-circle.animate81::after {
+    animation: cliprotate81 2s forwards;
+}
+@keyframes cliprotate82 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-32deg);}
+}
+.similarity-circle.animate82::after {
+    animation: cliprotate82 2s forwards;
+}
+@keyframes cliprotate83 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-31deg);}
+}
+.similarity-circle.animate83::after {
+    animation: cliprotate83 2s forwards;
+}
+@keyframes cliprotate84 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-29deg);}
+}
+.similarity-circle.animate84::after {
+    animation: cliprotate84 2s forwards;
+}
+@keyframes cliprotate85 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-27deg);}
+}
+.similarity-circle.animate85::after {
+    animation: cliprotate85 2s forwards;
+}
+@keyframes cliprotate86 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-25deg);}
+}
+.similarity-circle.animate86::after {
+    animation: cliprotate86 2s forwards;
+}
+@keyframes cliprotate87 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-23deg);}
+}
+.similarity-circle.animate87::after {
+    animation: cliprotate87 2s forwards;
+}
+@keyframes cliprotate88 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-22deg);}
+}
+.similarity-circle.animate88::after {
+    animation: cliprotate88 2s forwards;
+}
+@keyframes cliprotate89 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-20deg);}
+}
+.similarity-circle.animate89::after {
+    animation: cliprotate89 2s forwards;
+}
+@keyframes cliprotate90 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-18deg);}
+}
+.similarity-circle.animate90::after {
+    animation: cliprotate90 2s forwards;
+}
+@keyframes cliprotate91 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-16deg);}
+}
+.similarity-circle.animate91::after {
+    animation: cliprotate91 2s forwards;
+}
+@keyframes cliprotate92 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-14deg);}
+}
+.similarity-circle.animate92::after {
+    animation: cliprotate92 2s forwards;
+}
+@keyframes cliprotate93 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-13deg);}
+}
+.similarity-circle.animate93::after {
+    animation: cliprotate93 2s forwards;
+}
+@keyframes cliprotate94 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-11deg);}
+}
+.similarity-circle.animate94::after {
+    animation: cliprotate94 2s forwards;
+}
+@keyframes cliprotate95 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-9deg);}
+}
+.similarity-circle.animate95::after {
+    animation: cliprotate95 2s forwards;
+}
+@keyframes cliprotate96 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-7deg);}
+}
+.similarity-circle.animate96::after {
+    animation: cliprotate96 2s forwards;
+}
+@keyframes cliprotate97 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-5deg);}
+}
+.similarity-circle.animate97::after {
+    animation: cliprotate97 2s forwards;
+}
+@keyframes cliprotate98 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-4deg);}
+}
+.similarity-circle.animate98::after {
+    animation: cliprotate98 2s forwards;
+}
+@keyframes cliprotate99 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(-2deg);}
+}
+.similarity-circle.animate99::after {
+    animation: cliprotate99 2s forwards;
+}
+@keyframes cliprotate100 {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(0deg);}
+}
+.similarity-circle.animate100::after {
+    animation: cliprotate100 2s forwards;
+}
